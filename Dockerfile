@@ -1,5 +1,5 @@
-FROM alpine:3.7
-LABEL maintainer="jbbodart@yahoo.com"
+FROM arm32v6/alpine
+LABEL maintainer="cstuder@existenz.ch"
 
 ENV REFRESH_INTERVAL=600
 ENV SET_IPV4="yes"
