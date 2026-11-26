@@ -61,3 +61,12 @@ GANDI_PAT=<YOUR_VERY_SECRET_PERSONAL_ACCESS_TOKEN>
 RECORD_LIST=blog;www;@
 DOMAIN=your-gandi-hosted-domain.com
 ```
+
+## Build
+
+```bash
+docker buildx build \
+  --platform linux/amd64,linux/arm64,linux/arm/v7 \
+  -t cstuder/gandi-livedns:latest \
+  --push .
+```
